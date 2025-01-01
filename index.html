@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>D3VIL WORLDLIST GENERATOR</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>D3VIL WORLDLIST GENERATOR</h1>
+        </header>
+        <div class="form-container">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="number" id="number" min="1" placeholder="Enter Number" required>
+            <div>
+                <label>
+                    <input type="checkbox" id="includeSymbols"> Include Symbols (@ # $)
+                </label>
+            </div>
+            <button id="generateBtn">Generate Passwords</button>
+            <button id="downloadBtn" style="display: none;">Download</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
